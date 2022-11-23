@@ -1,40 +1,122 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Shell.NavBarIsVisible="False"
              x:Class="Wise.MainPage">
 
     <ScrollView>
+        
+        <!--Container General style-->
         <VerticalStackLayout
             Spacing="25"
-            Padding="30,0"
+            Padding="30"
             VerticalOptions="Center">
-
+            
+            <!--Logo-->
             <Image
-                Source="dotnet_bot.png"
-                SemanticProperties.Description="Cute dot net bot waving hi to you!"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+                Source="logo.png"
+                HeightRequest="150"
+                WidthRequest="150" />
 
-            <Label
-                Text="Hello, World!"
-                SemanticProperties.HeadingLevel="Level1"
-                FontSize="32"
-                HorizontalOptions="Center" />
+            <!--Title-->
+            <VerticalStackLayout 
+                Spacing="5">
+                <Label
+                    Text="Welcome To Wise"
+                    FontSize="28"
+                    TextColor="#FF5864"
+                    HorizontalTextAlignment="Center"/>
+                <Label
+                    Text="Login"
+                    FontSize="18"
+                    TextColor="#FF5864"
+                    HorizontalTextAlignment="Center"/>
+            </VerticalStackLayout>
 
-            <Label
-                Text="Welcome to .NET Multi-platform App UI"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
-                FontSize="18"
-                HorizontalOptions="Center" />
+            <!--Input Email-->
+            <StackLayout
+                Orientation="Horizontal">
+                <Frame
+                    ZIndex="100"
+                    HasShadow="True"
+                    HeightRequest="56"
+                    WidthRequest="56"
+                    CornerRadius="28"
+                    BorderColor="White">
+                    <Image
+                       Source="user.png"
+                       HeightRequest="20"
+                       WidthRequest="20" />
+                </Frame>
+                <Frame
+                    HeightRequest="45"
+                    Padding="0"
+                    Margin="-20,0,0,0"
+                    HasShadow="True"
+                    HorizontalOptions="FillAndExpand"
+                    BorderColor="White">
+                    <Entry
+                        Margin="20,0,0,0"
+                        VerticalOptions="Center"
+                        Keyboard="Email"
+                        Placeholder="User Name"
+                        HeightRequest="45">
+                    </Entry>
+                </Frame>
+            </StackLayout>
 
+            <!--Input Password-->
+            <StackLayout
+                Orientation="Horizontal">
+                <Frame
+                    ZIndex="100"
+                    HasShadow="True"
+                    HeightRequest="56"
+                    WidthRequest="56"
+                    CornerRadius="28"
+                    BorderColor="White">
+                    <Image
+                        Source="user.png"
+                        HeightRequest="20"
+                        WidthRequest="20" />
+                </Frame>
+                <Frame HeightRequest="45"
+                       Padding="0"
+                       Margin="-20,0,0,0"
+                       HasShadow="True"
+                       HorizontalOptions="FillAndExpand"
+                       BorderColor="White" >
+                    <Entry
+                        Margin="20,0,0,0"
+                        VerticalOptions="Center"
+                        Keyboard="Email"
+                        Placeholder="Password"
+                        HeightRequest="45"
+                        IsPassword="True">
+                    </Entry>
+                </Frame>
+            </StackLayout>
+
+            <!--Login Button-->
             <Button
-                x:Name="CounterBtn"
-                Text="Click me"
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Center" />
+                Text="Sign In"
+                BackgroundColor="#FF5864"
+                WidthRequest="100"
+                CornerRadius="10"
+                HorizontalOptions="Center"/>
 
+            <!--Sign Up-->
+            <StackLayout
+                Orientation="Horizontal"
+                Spacing="5"
+                HorizontalOptions="Center">
+                <Label
+                    Text="Don't have an account?"
+                    TextColor="#222"/>
+                <Label
+                    Text="Sign Up here"
+                    TextColor="#FF5864"/>
+            </StackLayout>
         </VerticalStackLayout>
     </ScrollView>
 
