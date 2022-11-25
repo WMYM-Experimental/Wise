@@ -2,7 +2,7 @@
 
 namespace Wise.Models
 {
-    public class User
+    public class WiseUser
     {
         #region Props
         [Key]
@@ -34,7 +34,7 @@ namespace Wise.Models
         #endregion
 
         #region Relationships
-        // Todo: Makea tabel of matchs an likes
+        // Todo: Make a tabel for matches and likes
         #endregion
     }
 }
