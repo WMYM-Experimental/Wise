@@ -5,13 +5,13 @@
              x:Class="Wise.MainPage">
 
     <ScrollView>
-        
+
         <!--Container General style-->
         <VerticalStackLayout
             Spacing="25"
             Padding="30"
             VerticalOptions="Center">
-            
+
             <!--Logo-->
             <Image
                 Source="logo.png"
@@ -22,13 +22,8 @@
             <VerticalStackLayout 
                 Spacing="5">
                 <Label
-                    Text="Welcome To Wise"
+                    Text="Mensaje"
                     FontSize="28"
-                    TextColor="#FF5864"
-                    HorizontalTextAlignment="Center"/>
-                <Label
-                    Text="Login"
-                    FontSize="18"
                     TextColor="#FF5864"
                     HorizontalTextAlignment="Center"/>
             </VerticalStackLayout>
@@ -36,30 +31,19 @@
             <!--Input Email-->
             <StackLayout
                 Orientation="Horizontal">
+
                 <Frame
-                    ZIndex="100"
-                    HasShadow="True"
-                    HeightRequest="56"
-                    WidthRequest="56"
-                    CornerRadius="28"
-                    BorderColor="White">
-                    <Image
-                       Source="user.png"
-                       HeightRequest="20"
-                       WidthRequest="20" />
-                </Frame>
-                <Frame
-                    HeightRequest="45"
+                    HeightRequest="65"
                     Padding="0"
-                    Margin="-20,0,0,0"
+                    Margin="0,0,0,0"
                     HasShadow="True"
                     HorizontalOptions="FillAndExpand"
                     BorderColor="White">
                     <Entry
-                        Margin="20,0,0,0"
+                        Margin="0,0,0,0"
                         VerticalOptions="Center"
                         Keyboard="Email"
-                        Placeholder="User Name"
+                        Placeholder="Tell us about yourself... "
                         HeightRequest="45">
                     </Entry>
                 </Frame>
@@ -68,32 +52,8 @@
             <!--Input Password-->
             <StackLayout
                 Orientation="Horizontal">
-                <Frame
-                    ZIndex="100"
-                    HasShadow="True"
-                    HeightRequest="56"
-                    WidthRequest="56"
-                    CornerRadius="28"
-                    BorderColor="White">
-                    <Image
-                        Source="user.png"
-                        HeightRequest="20"
-                        WidthRequest="20" />
-                </Frame>
-                <Frame HeightRequest="45"
-                       Padding="0"
-                       Margin="-20,0,0,0"
-                       HasShadow="True"
-                       HorizontalOptions="FillAndExpand"
-                       BorderColor="White" >
-                    <Entry
-                        Margin="20,0,0,0"
-                        VerticalOptions="Center"
-                        Keyboard="Email"
-                        Placeholder="Password"
-                        HeightRequest="45"
-                        IsPassword="True">
-                    </Entry>
+                <Frame>
+                    //TODO: Create a combobox for gender and a checklist for preferences
                 </Frame>
             </StackLayout>
 

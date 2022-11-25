@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Wise.View.LoginView"
-             Title="LoginView">
-    
+             x:Class="Wise.View.ProfileSetupView"
+             Title="ProfileSetupView">
     <ScrollView>
 
         <!--Container General style-->
@@ -22,13 +21,8 @@
             <VerticalStackLayout 
                 Spacing="5">
                 <Label
-                    Text="Welcome To Wise"
+                    Text="Mensaje"
                     FontSize="28"
-                    TextColor="#FF5864"
-                    HorizontalTextAlignment="Center"/>
-                <Label
-                    Text="Login"
-                    FontSize="18"
                     TextColor="#FF5864"
                     HorizontalTextAlignment="Center"/>
             </VerticalStackLayout>
@@ -36,30 +30,19 @@
             <!--Input Email-->
             <StackLayout
                 Orientation="Horizontal">
+                
                 <Frame
-                    ZIndex="100"
-                    HasShadow="True"
-                    HeightRequest="56"
-                    WidthRequest="56"
-                    CornerRadius="28"
-                    BorderColor="White">
-                    <Image
-                       Source="user.png"
-                       HeightRequest="20"
-                       WidthRequest="20" />
-                </Frame>
-                <Frame
-                    HeightRequest="45"
+                    HeightRequest="65"
                     Padding="0"
-                    Margin="-20,0,0,0"
+                    Margin="0,0,0,0"
                     HasShadow="True"
                     HorizontalOptions="FillAndExpand"
                     BorderColor="White">
                     <Entry
-                        Margin="20,0,0,0"
+                        Margin="0,0,0,0"
                         VerticalOptions="Center"
                         Keyboard="Email"
-                        Placeholder="User Name"
+                        Placeholder="Tell us about yourself... "
                         HeightRequest="45">
                     </Entry>
                 </Frame>
@@ -120,5 +103,3 @@
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
-
-
