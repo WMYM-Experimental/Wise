@@ -1,5 +1,4 @@
-﻿using Java.Util.Functions;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -8,25 +7,13 @@ using System.Threading.Tasks;
 
 namespace Wise.Models
 {
-    public class Matches
+    public class Interest
     {
         #region Props
         [Key]
         public int Id { get; set; }
-
         [Required]
-        public int IdPersonA { get; set; }
-
-        [Required]
-        public int IdPersonB { get; set; }
-
-        [Required]
-        public DateTime DateMatch { get; set; }
-
-        [Required]
-        public int Score { get; set; }
-
-        //STREAKS??
+        public string Name { get; set; }
         #endregion
 
         #region Relationships
