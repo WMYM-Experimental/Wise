@@ -19,7 +19,7 @@ namespace Wise.Models
         public int Elo { get; set; }
         [Required]
         public int Gender { get; set; }
-        public string Nacionalidad { get; set; }
+        public string Nationality { get; set; }
         public int Sign { get; set; }
         public int IsSmoker { get; set; }
         public int IsDrinker { get; set; }
@@ -31,9 +31,12 @@ namespace Wise.Models
         [Required]
         public byte[] MainPic { get; set; }
         [Required]
-        public string[] SexualPreferences { get; set; }
+        public List<string> SexualPreferences { get; set; }
+
+        public string Pic { get; set; }
 
         #endregion
+
 
         #region Relationships
         // Todo: Make a tabel for matches and likes

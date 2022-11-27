@@ -2,17 +2,11 @@
 
 namespace Wise.Models
 {
-    public class Matches
+    public class Match
     {
         #region Props
         [Key]
         public int Id { get; set; }
-
-        [Required]
-        public int IdPersonA { get; set; }
-
-        [Required]
-        public int IdPersonB { get; set; }
 
         [Required]
         public DateTime DateMatch { get; set; }
@@ -24,7 +18,10 @@ namespace Wise.Models
         #endregion
 
         #region Relationships
-        //TODO: Create relations
+        public int PersonAId { get; set; }
+        public virtual WiseUser PersonA { get; set; }
+        public int PersonBId { get; set; }
+        public virtual WiseUser PersonB { get; set; }
         #endregion
 
 

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Wise.Models
 {
-    public class Interests
+    public class Interest
     {
         #region Props
         [Key]

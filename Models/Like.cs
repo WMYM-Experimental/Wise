@@ -7,21 +7,20 @@ using System.Threading.Tasks;
 
 namespace Wise.Models
 {
-    public class Likes
+    public class Like
     {
         #region Props
         [Key]
         public int Id { get; set; }
         [Required]
-        public int IdLiker { get; set; }
-        [Required]
-        public int IdLiked { get; set; }
-        [Required]
         public DateTime Date { get; set; }
         #endregion
 
         #region Relationships
-        //TODO: Create relations
+        public int LikerId { get; set; }
+        public virtual WiseUser Liker { get; set; }
+        public int LikedId { get; set; }
+        public virtual WiseUser Liked { get; set; }
         #endregion
 
     }
