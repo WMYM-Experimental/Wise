@@ -4,80 +4,96 @@
              Shell.NavBarIsVisible="False"
              x:Class="Wise.MainPage">
 
-    <ScrollView>
-
-        <!--Container General style-->
-        <VerticalStackLayout
+    <ScrollView Padding="30">
+        <VerticalStackLayout BackgroundColor="CornflowerBlue"
             Spacing="25"
             Padding="30"
-            VerticalOptions="Center">
+            VerticalOptions="Start">
 
-            <!--Logo-->
-            <Image
-                Source="logo.png"
-                HeightRequest="150"
-                WidthRequest="150" />
+            <!--Input date-->
+            <StackLayout BackgroundColor="Red"
+                         WidthRequest="300"
+                         Spacing="30"
+                         VerticalOptions="Center">
 
-            <!--Title-->
-            <VerticalStackLayout 
-                Spacing="5">
-                <Label
-                    Text="Mensaje"
-                    FontSize="28"
-                    TextColor="#FF5864"
-                    HorizontalTextAlignment="Center"/>
-            </VerticalStackLayout>
+                <StackLayout VerticalOptions="Center">
+                    <Label Text="Pick your birthdate:" 
+                           VerticalTextAlignment="Center"></Label>
+                </StackLayout>
 
-            <!--Input Email-->
-            <StackLayout
-                Orientation="Horizontal">
-
-                <Frame
-                    HeightRequest="65"
-                    Padding="0"
-                    Margin="0,0,0,0"
-                    HasShadow="True"
-                    HorizontalOptions="FillAndExpand"
-                    BorderColor="White">
-                    <Entry
-                        Margin="0,0,0,0"
-                        VerticalOptions="Center"
-                        Keyboard="Email"
-                        Placeholder="Tell us about yourself... "
-                        HeightRequest="45">
-                    </Entry>
-                </Frame>
+                <StackLayout BackgroundColor="Purple">
+                    <DatePicker Margin="10,10,10,10"></DatePicker>
+                </StackLayout>
             </StackLayout>
 
-            <!--Input Password-->
-            <StackLayout
-                Orientation="Horizontal">
-                <Frame>
-                    //TODO: Create a combobox for gender and a checklist for preferences
-                </Frame>
+            <!--Input Bio-->
+            <StackLayout BackgroundColor="Red"
+                         WidthRequest="300"
+                         Spacing="30"
+                         VerticalOptions="Center">
+
+                <StackLayout VerticalOptions="Center">
+                    <Label Text="Tell about yourself..." 
+                           VerticalTextAlignment="Center"></Label>
+                </StackLayout>
+
+                <StackLayout BackgroundColor="Purple">
+                    <Entry WidthRequest="300"
+                           HeightRequest="100"
+                           Placeholder="Write anything..."
+                           PlaceholderColor="White"></Entry>
+                </StackLayout>
             </StackLayout>
 
-            <!--Login Button-->
-            <Button
-                Text="Sign In"
+            <!--Select genre-->
+            <StackLayout BackgroundColor="Red"
+                         WidthRequest="300"
+                         Spacing="30"
+                         VerticalOptions="Center">
+
+                <StackLayout VerticalOptions="Center">
+                    <Label Text="Tell about yourself..." 
+                           VerticalTextAlignment="Center"></Label>
+                </StackLayout>
+
+                <StackLayout BackgroundColor="Purple">
+                    <Picker WidthRequest="300"
+                            Title="How do you identify?">
+
+                    </Picker>
+                </StackLayout>
+            </StackLayout>
+
+            <!--Select what the user would like to see-->
+            <StackLayout BackgroundColor="Red"
+                         WidthRequest="300"
+                         Spacing="30"
+                         VerticalOptions="Center">
+
+                <StackLayout VerticalOptions="Center">
+                    <Label Text="What would you like us to show you on your feed?" 
+                           VerticalTextAlignment="Center"></Label>
+                </StackLayout>
+
+                <StackLayout BackgroundColor="Purple">
+                    <Picker WidthRequest="300"
+                            Title="">
+
+                    </Picker>
+                </StackLayout>
+            </StackLayout>
+            <!--Button to send information-->
+            <StackLayout>
+                <Button
+                Text="Upload"
+                TextColor="#F1F1F1"
                 BackgroundColor="#FF5864"
-                WidthRequest="100"
+                WidthRequest="200"
                 CornerRadius="10"
                 HorizontalOptions="Center"/>
-
-            <!--Sign Up-->
-            <StackLayout
-                Orientation="Horizontal"
-                Spacing="5"
-                HorizontalOptions="Center">
-                <Label
-                    Text="Don't have an account?"
-                    TextColor="#222"/>
-                <Label
-                    Text="Sign Up here"
-                    TextColor="#FF5864"/>
             </StackLayout>
-        </VerticalStackLayout>
-    </ScrollView>
 
+        </VerticalStackLayout>
+
+    </ScrollView>
 </ContentPage>

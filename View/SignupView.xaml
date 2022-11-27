@@ -26,13 +26,44 @@
                     TextColor="#FF5864"
                     HorizontalTextAlignment="Center"/>
                 <Label
-                    Text="Login"
+                    Text="Signup"
                     FontSize="18"
                     TextColor="#FF5864"
                     HorizontalTextAlignment="Center"/>
             </VerticalStackLayout>
 
-            <!--Input Email-->
+            <!--Input user-->
+            <StackLayout
+                Orientation="Horizontal">
+                <Frame
+                    ZIndex="100"
+                    HasShadow="True"
+                    HeightRequest="56"
+                    WidthRequest="56"
+                    CornerRadius="28"
+                    BorderColor="White">
+                    <Image
+                       Source="user.png"
+                       HeightRequest="20"
+                       WidthRequest="20" />
+                </Frame>
+                <Frame
+                    HeightRequest="45"
+                    Padding="0"
+                    Margin="-20,0,0,0"
+                    HasShadow="True"
+                    HorizontalOptions="FillAndExpand"
+                    BorderColor="White">
+                    <Entry
+                        Margin="20,0,0,0"
+                        VerticalOptions="Center"
+                        Placeholder="User Name"
+                        HeightRequest="45">
+                    </Entry>
+                </Frame>
+            </StackLayout>
+
+            <!--Input email-->
             <StackLayout
                 Orientation="Horizontal">
                 <Frame
@@ -58,7 +89,7 @@
                         Margin="20,0,0,0"
                         VerticalOptions="Center"
                         Keyboard="Email"
-                        Placeholder="User Name"
+                        Placeholder="Email"
                         HeightRequest="45">
                     </Entry>
                 </Frame>
@@ -96,26 +127,27 @@
                 </Frame>
             </StackLayout>
 
-            <!--Login Button-->
+            <!--Sign up Button-->
             <Button
-                Text="Sign In"
+                Text="Sign Up"
+                TextColor="#F1F1F1"
                 BackgroundColor="#FF5864"
                 WidthRequest="100"
                 CornerRadius="10"
                 HorizontalOptions="Center"/>
 
-            <!--Sign Up-->
+            <!--Log in-->
             <StackLayout
                 Orientation="Horizontal"
                 Spacing="5"
                 HorizontalOptions="Center">
                 <Label
-                    Text="Don't have an account?"
+                    Text="Already have an account?"
                     TextColor="#222"/>
                 <Label
-                    Text="Sign Up here"
+                    Text="Log in here"
                     TextColor="#FF5864"/>
             </StackLayout>
         </VerticalStackLayout>
-    </ScrollView>
+    </ScrollView> 
 </ContentPage>
