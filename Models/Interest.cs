@@ -17,7 +17,8 @@ namespace Wise.Models
         #endregion
 
         #region Relationships
-        //TODO: Create relations
+        public int UserId { get; set; }
+        public WiseUser User { get; set; }
         #endregion
 
 

@@ -53,19 +53,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="View\InterestsView.xaml">
+	  <MauiXaml Update="Views\InterestsPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="View\LoginView.xaml">
+	  <MauiXaml Update="Views\LoginPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="View\ProfileSetupView.xaml">
+	  <MauiXaml Update="Views\ProfileSetupPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="View\SignupView.xaml">
+	  <MauiXaml Update="Views\SignupPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="View\UploadProfilePicView.xaml">
+	  <MauiXaml Update="Views\UploadProfilePicPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>
