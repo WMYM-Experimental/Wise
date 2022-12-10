@@ -13,7 +13,7 @@
 
             <!--Logo-->
             <Image
-                Source="logo.png"
+                Source="tinder.png"
                 HeightRequest="150"
                 WidthRequest="150" />
 
