@@ -3,11 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Wise.Views.InterestsPage"
              Title="InterestsPage">
+    
+    
     <ScrollView Padding="30">
-        <VerticalStackLayout BackgroundColor="CornflowerBlue"
-            Spacing="25"
-            Padding="30"
-            VerticalOptions="Start">
+        <FlexLayout
+            Direction="Column">
 
             <!--Title-->
             <StackLayout>
@@ -18,349 +18,105 @@
                         HorizontalTextAlignment="Center"/>
             </StackLayout>
 
-            <!--Creativty options-->
+
+            <!--Input section-->
+            <VerticalStackLayout>
+                <!--Creativity-->
+                <StackLayout
+                    Margin="0,0,0,15">
+                    <StackLayout>
+                        <Label Text="Creativity"/>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Read"/>
+                            <CheckBox
+                                Color="#FF5864">
+                            </CheckBox>
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout>
+                            <Label Text="Watch movies"/>
+                            <CheckBox
+                                Color="#FF5864">
+                            </CheckBox>
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout>
+                            <Label Text="Listen to music"/>
+                            <CheckBox
+                                Color="#FF5864">
+                            </CheckBox>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+
+                <!--Hobbies-->
+                <StackLayout
+                    Margin="0,0,0,15">
+                    <StackLayout>
+                        <Label Text="Hobbies"/>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Do sports"/>
+                            <CheckBox
+                                Color="#FF5864">
+                            </CheckBox>
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout>
+                            <Label Text="Logical stuff"/>
+                            <CheckBox
+                                Color="#FF5864">
+                            </CheckBox>
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout>
+                            <Label Text="Videogames"/>
+                            <CheckBox
+                                Color="#FF5864">
+                            </CheckBox>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+
+                <!--Going Out-->
+                <StackLayout
+                    Margin="0,0,0,15">
+                    <StackLayout>
+                        <Label Text="Going out"/>
+                    </StackLayout>
+
+                    <StackLayout>
+                        <HorizontalStackLayout>
+                            <Label Text="Cinema"/>
+                            <CheckBox
+                                Color="#FF5864">
+                            </CheckBox>
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout>
+                            <Label Text="Stay at home"/>
+                            <CheckBox
+                                Color="#FF5864">
+                            </CheckBox>
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout>
+                            <Label Text="Anywhere last home"/>
+                            <CheckBox
+                                Color="#FF5864">
+                            </CheckBox>
+                        </HorizontalStackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </VerticalStackLayout>
+
+            <!--Upload Button-->
             <StackLayout>
-
-                <StackLayout>
-                    <Label Text="Creativity"/>
-                </StackLayout>
-
-                <StackLayout>
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                </StackLayout>
-            </StackLayout>
-
-            <!--Sports options-->
-            <StackLayout>
-
-                <StackLayout>
-                    <Label Text="Sports"/>
-                </StackLayout>
-
-                <StackLayout>
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                </StackLayout>
-
-            </StackLayout>
-
-            <!--Music options-->
-            <StackLayout>
-
-                <StackLayout>
-                    <Label Text="Music"/>
-                </StackLayout>
-
-                <StackLayout>
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                </StackLayout>
-
-            </StackLayout>
-
-            <!--Going out options-->
-            <StackLayout>
-
-                <StackLayout>
-                    <Label Text="Going out"/>
-                </StackLayout>
-
-                <StackLayout>
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                </StackLayout>
-
-            </StackLayout>
-
-            <!--Food & Drinks options-->
-            <StackLayout>
-
-                <StackLayout>
-                    <Label Text="Food and Drinks"/>
-                </StackLayout>
-
-                <StackLayout>
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                </StackLayout>
-
-            </StackLayout>
-
-            <!--Values and traits options-->
-            <StackLayout>
-
-                <StackLayout>
-                    <Label Text="Values and traits"/>
-                </StackLayout>
-
-                <StackLayout>
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                    <HorizontalStackLayout>
-                        <Label Text="Art"/>
-                        <CheckBox>
-
-
-
-                        </CheckBox>
-                    </HorizontalStackLayout>
-
-                </StackLayout>
-
-            </StackLayout>
-
-            <StackLayout>
-                <!--Upload Button-->
                 <Button
                 Text="Upload"
                 TextColor="#F1F1F1"
@@ -370,6 +126,6 @@
                 HorizontalOptions="Center"/>
             </StackLayout>
 
-        </VerticalStackLayout>
+        </FlexLayout>
     </ScrollView>
 </ContentPage>
