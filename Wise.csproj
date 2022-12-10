@@ -49,6 +49,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\tinder.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <Folder Include="ViewModel\" />
 	</ItemGroup>
 
