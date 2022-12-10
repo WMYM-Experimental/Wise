@@ -8,9 +8,7 @@
 
     <ScrollView Padding="30">
         <FlexLayout
-            BackgroundColor="CornflowerBlue"
-            Direction="Column"
-            Wrap="Wrap">
+            Direction="Column">
 
             <!--Title-->
             <StackLayout>
@@ -25,81 +23,93 @@
             <!--Input section-->
             <VerticalStackLayout>
                 <!--Creativity-->
-                <StackLayout>
+                <StackLayout
+                    Margin="0,0,0,15">
                     <StackLayout>
                         <Label Text="Creativity"/>
                     </StackLayout>
 
                     <StackLayout>
                         <HorizontalStackLayout>
-                            <Label Text="Art"/>
-                            <CheckBox>
+                            <Label Text="Read"/>
+                            <CheckBox
+                                Color="#FF5864">
                             </CheckBox>
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout>
-                            <Label Text="Art"/>
-                            <CheckBox>
+                            <Label Text="Watch movies"/>
+                            <CheckBox
+                                Color="#FF5864">
                             </CheckBox>
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout>
-                            <Label Text="Art"/>
-                            <CheckBox>
+                            <Label Text="Listen to music"/>
+                            <CheckBox
+                                Color="#FF5864">
                             </CheckBox>
                         </HorizontalStackLayout>
                     </StackLayout>
                 </StackLayout>
 
                 <!--Hobbies-->
-                <StackLayout>
+                <StackLayout
+                    Margin="0,0,0,15">
                     <StackLayout>
-                        <Label Text="Creativity"/>
+                        <Label Text="Hobbies"/>
                     </StackLayout>
 
                     <StackLayout>
                         <HorizontalStackLayout>
-                            <Label Text="Art"/>
-                            <CheckBox>
+                            <Label Text="Do sports"/>
+                            <CheckBox
+                                Color="#FF5864">
                             </CheckBox>
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout>
-                            <Label Text="Art"/>
-                            <CheckBox>
+                            <Label Text="Logical stuff"/>
+                            <CheckBox
+                                Color="#FF5864">
                             </CheckBox>
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout>
-                            <Label Text="Art"/>
-                            <CheckBox>
+                            <Label Text="Videogames"/>
+                            <CheckBox
+                                Color="#FF5864">
                             </CheckBox>
                         </HorizontalStackLayout>
                     </StackLayout>
                 </StackLayout>
 
                 <!--Going Out-->
-                <StackLayout>
+                <StackLayout
+                    Margin="0,0,0,15">
                     <StackLayout>
-                        <Label Text="Creativity"/>
+                        <Label Text="Going out"/>
                     </StackLayout>
 
                     <StackLayout>
                         <HorizontalStackLayout>
-                            <Label Text="Art"/>
-                            <CheckBox>
+                            <Label Text="Cinema"/>
+                            <CheckBox
+                                Color="#FF5864">
                             </CheckBox>
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout>
-                            <Label Text="Art"/>
-                            <CheckBox>
+                            <Label Text="Stay at home"/>
+                            <CheckBox
+                                Color="#FF5864">
                             </CheckBox>
                         </HorizontalStackLayout>
 
                         <HorizontalStackLayout>
-                            <Label Text="Art"/>
-                            <CheckBox>
+                            <Label Text="Anywhere last home"/>
+                            <CheckBox
+                                Color="#FF5864">
                             </CheckBox>
                         </HorizontalStackLayout>
                     </StackLayout>
