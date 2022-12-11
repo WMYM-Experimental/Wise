@@ -4,13 +4,12 @@ namespace Wise.Views;
 
 public partial class SignupPage : ContentPage
 {
-    WiseUser user;
     public SignupPage()
     {
         InitializeComponent();
 
         string appDataPath = FileSystem.AppDataDirectory;
-        string userPath = $"{user.Name}.user.txt";
+        string userPath = $"{Name}.user.txt";
 
         LoadSignup(
             fileName: Path.Combine(appDataPath, userPath)
@@ -19,7 +18,8 @@ public partial class SignupPage : ContentPage
 
     private void LoadSignup(string fileName)
     {
-        WiseUser signupUserFile = new() { };
+        WiseUser signupUserFile = new();
+        signupUserFile.Name = Name.Text;
         signupUserFile.Name = fileName;
 
         if (File.Exists(fileName))
@@ -38,6 +38,6 @@ public partial class SignupPage : ContentPage
             File.WriteAllText($"{wuser.Name}, {wuser.Email}, {wuser.Password},", Email.Text);
         }
 
-        await Shell.Current.GoToAsync("FeedPage");
+        await Shell.Current.GoToAsync("..");
     }
 }
