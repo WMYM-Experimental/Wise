@@ -55,7 +55,8 @@
                         Margin="20,0,0,0"
                         VerticalOptions="Center"
                         Placeholder="User Name"
-                        HeightRequest="45">
+                        HeightRequest="45"
+                        x:Name="Name">
                     </Entry>
                 </Frame>
             </StackLayout>
@@ -85,7 +86,8 @@
                         VerticalOptions="Center"
                         Keyboard="Email"
                         Placeholder="Email"
-                        HeightRequest="45">
+                        HeightRequest="45"
+                        x:Name="Email">
                     </Entry>
                 </Frame>
             </StackLayout>
@@ -114,7 +116,8 @@
                         Keyboard="Email"
                         Placeholder="Password"
                         HeightRequest="45"
-                        IsPassword="True">
+                        IsPassword="True"
+                        x:Name="Paassword">
                     </Entry>
                 </Frame>
             </StackLayout>
