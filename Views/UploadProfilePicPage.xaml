@@ -23,7 +23,8 @@
 
             <!--Verify button to expand picture once selected.-->
             <Image WidthRequest="300"
-                   HeightRequest="300">
+                   HeightRequest="300"
+                   Source="tinder.png">
             </Image>
 
         </StackLayout>
