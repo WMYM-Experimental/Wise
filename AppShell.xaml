@@ -11,16 +11,31 @@
     <TabBar>
         <ShellContent
             Title="Profile"
-            ContentTemplate="{DataTemplate local:MainPage}"
-            />
-
+            ContentTemplate="{DataTemplate views:SignupPage}"/>
+        
         <ShellContent
-            Title="Feed"
+            Title="Login"
             ContentTemplate="{DataTemplate views:LoginPage}"/>
 
         <ShellContent
+            Title="Profile"
+            ContentTemplate="{DataTemplate views:ProfileSetupPage}"/>
+
+        <ShellContent
+            Title="Profile"
+            ContentTemplate="{DataTemplate views:UploadProfilePicPage}"/>
+
+        <ShellContent
+            Title="Profile"
+            ContentTemplate="{DataTemplate views:InterestsPage}"/>
+
+        <ShellContent
+            Title="Feed"
+            ContentTemplate="{DataTemplate views:FeedPage}"/>
+
+        <ShellContent
             Title="Chats"
-            ContentTemplate="{DataTemplate views:SignupPage}"/>
+            ContentTemplate="{DataTemplate views:ProfilePage}"/>
     </TabBar>
 
 </Shell>
