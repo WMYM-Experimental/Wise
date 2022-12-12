@@ -22,12 +22,20 @@
             ContentTemplate="{DataTemplate views:ProfileSetupPage}"/>
 
         <ShellContent
-            Title="Profile"
+            Title="Update"
             ContentTemplate="{DataTemplate views:UploadProfilePicPage}"/>
 
         <ShellContent
-            Title="Profile"
+            Title="Interests"
             ContentTemplate="{DataTemplate views:InterestsPage}"/>
+
+        <ShellContent
+            Title="New Interests"
+            ContentTemplate="{DataTemplate views:InputInterestPage}"/>
+
+        <ShellContent
+            Title="New Interests"
+            ContentTemplate="{DataTemplate views:AllInterestsPage}"/>
 
         <ShellContent
             Title="Feed"

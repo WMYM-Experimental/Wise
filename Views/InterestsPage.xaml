@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Wise.Views.InterestsPage"
              Title="InterestsPage">
-    
-    
+
+
     <ScrollView Padding="30">
         <FlexLayout
             Direction="Column">
@@ -12,10 +12,10 @@
             <!--Title-->
             <StackLayout>
                 <Label
-                        Text="We're almoste done, last steps... ;)"
-                        FontSize="28"
-                        TextColor="#FF5864"
-                        HorizontalTextAlignment="Center"/>
+                    Text="We're almoste done, last steps... ;)"
+                    FontSize="28"
+                    TextColor="#FF5864"
+                    HorizontalTextAlignment="Center"/>
             </StackLayout>
 
 
@@ -25,14 +25,17 @@
                 <StackLayout
                     Margin="0,0,0,15">
                     <StackLayout>
-                        <Label Text="Creativity"/>
+                        <Label
+                            Text="Creativity"/>
                     </StackLayout>
 
                     <StackLayout>
                         <HorizontalStackLayout>
-                            <Label Text="Read"/>
+                            <Label
+                                Text="Read"/>
                             <CheckBox
-                                Color="#FF5864">
+                                Color="#FF5864"
+                                x:Name="Read">
                             </CheckBox>
                         </HorizontalStackLayout>
 
