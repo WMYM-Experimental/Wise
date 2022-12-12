@@ -6,7 +6,7 @@
  
 
     <CollectionView
-        x:Name="notesCollection"
+        x:Name="interestsCollection"
         ItemsSource="{Binding Interests}"
         Margin="20"
         SelectionMode="Single"

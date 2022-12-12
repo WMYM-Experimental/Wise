@@ -31,7 +31,7 @@ public partial class AllInterestsPage : ContentPage
             await Shell.Current.GoToAsync($"{nameof(InputInterestPage)}?{nameof(InputInterestPage.ItemId)}={i.Name}");
 
             // Unselect the UI
-            notesCollection.SelectedItem = null;
+            interestsCollection.SelectedItem = null;
         }
     }
 }
