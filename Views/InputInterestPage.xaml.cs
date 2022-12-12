@@ -1,9 +1,14 @@
 using Wise.Models;
-
 namespace Wise.Views;
 
+[QueryProperty(nameof(ItemId), nameof(ItemId))]
 public partial class InputInterestPage : ContentPage
 {
+    public string ItemId
+    {
+        set { LoadInterest(value); }
+    }
+
     public InputInterestPage()
     {
         InitializeComponent();
@@ -16,7 +21,7 @@ public partial class InputInterestPage : ContentPage
 
     private void LoadInterest(string fileName)
     {
-        Interest iModel = new ();
+        Interest iModel = new();
         iModel.Name = fileName;
 
         if (File.Exists(fileName))

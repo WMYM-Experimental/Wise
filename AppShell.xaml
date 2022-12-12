@@ -34,16 +34,9 @@
             ContentTemplate="{DataTemplate views:InputInterestPage}"/>
 
         <ShellContent
-            Title="New Interests"
+            Title="All Interests"
             ContentTemplate="{DataTemplate views:AllInterestsPage}"/>
 
-        <ShellContent
-            Title="Feed"
-            ContentTemplate="{DataTemplate views:FeedPage}"/>
-
-        <ShellContent
-            Title="Chats"
-            ContentTemplate="{DataTemplate views:ProfilePage}"/>
     </TabBar>
 
 </Shell>
