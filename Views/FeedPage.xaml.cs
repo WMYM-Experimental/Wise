@@ -1,6 +1,6 @@
 namespace Wise.Views;
 
-public partial class FeedPage : ContentPage
+public partial class FeedPage : TabbedPage
 {
 	public FeedPage()
 	{

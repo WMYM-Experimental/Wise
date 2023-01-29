@@ -125,11 +125,10 @@
             <!--Sign up Button-->
             <Button
                 Text="Sign Up"
-                TextColor="#F1F1F1"
-                BackgroundColor="#FF5864"
                 WidthRequest="100"
                 CornerRadius="10"
                 HorizontalOptions="Center"
+                x:Name="btnSignUp"
                 Clicked="SaveButton_Clicked"/>
 
             <!--Log in-->

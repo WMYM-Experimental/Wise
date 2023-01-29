@@ -99,11 +99,11 @@
             <!--Login Button-->
             <Button
                 Text="Sign In"
-                TextColor="#F1F1F1"
-                BackgroundColor="#FF5864"
                 WidthRequest="100"
                 CornerRadius="10"
-                HorizontalOptions="Center"/>
+                HorizontalOptions="Center"
+                x:Name="btnLogin"
+                Clicked="Login_Clicked"/>
 
             <!--Sign Up-->
             <StackLayout

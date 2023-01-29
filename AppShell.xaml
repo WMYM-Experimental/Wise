@@ -8,34 +8,39 @@
     Shell.FlyoutBehavior="Disabled"
     BackgroundColor="#FF5864">
 
-    <TabBar>
-        <ShellContent
-            Title="Profile"
-            ContentTemplate="{DataTemplate views:SignupPage}"/>
-        
-        <ShellContent
-            Title="Login"
-            ContentTemplate="{DataTemplate views:LoginPage}"/>
+    <ShellContent
+            Title="SignupPage"
+            ContentTemplate="{DataTemplate views:SignupPage}"
+            Route="SignupPage"/>
 
-        <ShellContent
-            Title="Profile"
-            ContentTemplate="{DataTemplate views:ProfileSetupPage}"/>
+    <ShellContent
+            Title="LoginPage"
+            ContentTemplate="{DataTemplate views:LoginPage}"
+            Route="LoginPage"/>
 
-        <ShellContent
-            Title="Profile"
-            ContentTemplate="{DataTemplate views:UploadProfilePicPage}"/>
+    <ShellContent
+            Title="ProfileSetupPage"
+            ContentTemplate="{DataTemplate views:ProfileSetupPage}"
+            Route="ProfileSetupPage"/>
 
-        <ShellContent
-            Title="Profile"
-            ContentTemplate="{DataTemplate views:InterestsPage}"/>
+    <ShellContent
+            Title="UploadProfilePicPage"
+            ContentTemplate="{DataTemplate views:UploadProfilePicPage}"
+            Route="UploadProfilePicPage"/>
 
-        <ShellContent
-            Title="Feed"
-            ContentTemplate="{DataTemplate views:FeedPage}"/>
+    <ShellContent
+            Title="InterestsPage"
+            ContentTemplate="{DataTemplate views:InterestsPage}"
+            Route="InterestsPage"/>
 
-        <ShellContent
-            Title="Chats"
-            ContentTemplate="{DataTemplate views:ProfilePage}"/>
-    </TabBar>
+    <ShellContent
+            Title="FeedPage"
+            ContentTemplate="{DataTemplate views:FeedPage}"
+            Route="FeedPage"/>
+
+    <ShellContent
+            Title="ChatsPage"
+            ContentTemplate="{DataTemplate views:ChatsPage}"
+            Route="ChatsPage"/>
 
 </Shell>

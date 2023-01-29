@@ -33,11 +33,11 @@ public partial class SignupPage : ContentPage
 
     private async void SaveButton_Clicked(object sender, EventArgs e)
     {
-        if (BindingContext is WiseUser wuser)
-        {
-            File.WriteAllText($"{wuser.Name}, {wuser.Email}, {wuser.Password},", Email.Text);
-        }
+        await Shell.Current.GoToAsync(nameof(LoginPage));
+    }
 
-        await Shell.Current.GoToAsync("..");
+    private async void LoginSecSignup(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(LoginPage));
     }
 }

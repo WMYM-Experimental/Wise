@@ -4,9 +4,9 @@
              x:Class="Wise.Views.ProfilePage"
              Title="ProfilePage">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <VerticalStackLayout>
+            <!--Pictures-->
+        </VerticalStackLayout>
+        
     </VerticalStackLayout>
 </ContentPage>
