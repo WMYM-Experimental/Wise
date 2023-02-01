@@ -12,7 +12,7 @@ namespace Wise.Services
     {
         public MatchesService()
         {
-            
+
         }
 
         public async Task<List<WiseUser>> ObtenerDatosUsuarios()
@@ -29,13 +29,17 @@ namespace Wise.Services
             var usuarios = JsonSerializer.Deserialize<List<WiseUser>>(json);
             return usuarios;
         }
-        
+
         //create a function for creating a match and send by post to an api
         public Match CreateMatch(int idPerson, int idMatch)
         {
-            var match = new Match(idPerson, idMatch, true);
+            var match = new Match()
+            {
+                MatchId = idMatch,
+                UserId = idPerson
+            };
             return match;
         }
-        
+
     }
 }

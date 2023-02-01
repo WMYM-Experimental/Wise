@@ -158,7 +158,9 @@
                         FontSize="20"
                         FontAttributes="Bold"
                         Margin="10"
-                        Padding="10"/>
+                        Padding="10"
+                        Clicked="MatchAction"/>
+                    
 
                     <Button
                         WidthRequest="50" 

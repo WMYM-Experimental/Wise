@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Text.Json;
+using Wise.Models;
 
 namespace Wise.Services
 {
@@ -20,15 +21,15 @@ namespace Wise.Services
             _baseUrl = baseUrl;
         }
 
-        public async Task<WiseUser[]> GetUsersAsync()
-        {
-            var response = await _httpClient.GetAsync(_baseUrl);
-            response.EnsureSuccessStatusCode();
+        //public async Task<WiseUser[]> GetUsersAsync()
+        //{
+        //    var response = await _httpClient.GetAsync(_baseUrl);
+        //    response.EnsureSuccessStatusCode();
 
-            var result = await response.Content.ReadAsAsync<WiseUser[]>();
+        //    //var result = await response.Content.ReadAsAsync<WiseUser[]>();
 
-            return result;
-        }
+        //    //return result;
+        //}
 
         public async Task<List<WiseUser>> ObtenerDatosUsuarios()
         {
