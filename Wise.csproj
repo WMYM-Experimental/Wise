@@ -49,11 +49,25 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <AndroidResource Remove="ViewModel\**" />
+	  <Compile Remove="ViewModel\**" />
+	  <EmbeddedResource Remove="ViewModel\**" />
+	  <MauiCss Remove="ViewModel\**" />
+	  <MauiXaml Remove="ViewModel\**" />
+	  <None Remove="ViewModel\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Remove="Services\HttpService.cs" />
+	  <Compile Remove="Services\MatchesService.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Remove="Resources\Images\tinder.png" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="ViewModel\" />
+	  <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
 	</ItemGroup>
 
 	<ItemGroup>

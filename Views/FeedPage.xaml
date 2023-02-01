@@ -14,9 +14,9 @@
             BackgroundColor="White">
 
                 <Button
-                    WidthRequest="50" 
                     HeightRequest="50" 
-                    BackgroundColor="#77D065" 
+                    BorderColor="#FF5964"
+                    CornerRadius="100"
                     Text="Profile"
                     FontSize="20"
                     FontAttributes="Bold"
@@ -25,12 +25,13 @@
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="CenterAndExpand"
                     Clicked="GoToProfile"
+                    WidthRequest="150"
                         />
 
-                <Button
-                    WidthRequest="50" 
+                <Button 
                     HeightRequest="50" 
-                    BackgroundColor="#77D065" 
+                    CornerRadius="100"
+                    BorderColor="#FF5964"
                     Text="Chats"
                     FontSize="20"
                     FontAttributes="Bold"
@@ -38,7 +39,8 @@
                     Padding="10"
                     VerticalOptions="CenterAndExpand"
                     HorizontalOptions="CenterAndExpand"
-                    Clicked="GoToChats"/>
+                    Clicked="GoToChats"
+                    WidthRequest="150"/>
             </HorizontalStackLayout>
 
             <!-- Match section -->
@@ -147,10 +149,28 @@
 
                 <!-- Interactions section -->
                 <HorizontalStackLayout>
+
+
+                    <Button
+                        WidthRequest="50" 
+                        HeightRequest="50" 
+                        BackgroundColor="#FF5964" 
+                        Text="X"
+                        x:Name="DislikeButton"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        Margin="10"
+                        Padding="10"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand"
+                        />
+
                     <Button
                         WidthRequest="50" 
                         HeightRequest="50"  
-                        BackgroundColor="#77D065" 
+                        BackgroundColor="#ffffff"
+                        BorderColor="#FF5964"
+                        TextColor="#FF5964"
                         VerticalOptions="Center" 
                         HorizontalOptions="Center"
                         Text="Like"
@@ -160,21 +180,6 @@
                         Margin="10"
                         Padding="10"
                         Clicked="MatchAction"/>
-                    
-
-                    <Button
-                        WidthRequest="50" 
-                        HeightRequest="50" 
-                        BackgroundColor="#77D065" 
-                        Text="Dislike"
-                        x:Name="DislikeButton"
-                        FontSize="20"
-                        FontAttributes="Bold"
-                        Margin="10"
-                        Padding="10"
-                        VerticalOptions="CenterAndExpand"
-                        HorizontalOptions="CenterAndExpand"
-                        />
                 </HorizontalStackLayout>
 
             </VerticalStackLayout>

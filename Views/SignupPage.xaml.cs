@@ -1,4 +1,6 @@
+using Newtonsoft.Json;
 using Wise.Models;
+using Wise.Services;
 
 namespace Wise.Views;
 
@@ -7,32 +9,23 @@ public partial class SignupPage : ContentPage
     public SignupPage()
     {
         InitializeComponent();
-
-        string appDataPath = FileSystem.AppDataDirectory;
-        string userPath = $"{Name}.user.txt";
-
-        LoadSignup(
-            fileName: Path.Combine(appDataPath, userPath)
-            );
     }
 
     private void LoadSignup(string fileName)
     {
-        WiseUser signupUserFile = new();
-        signupUserFile.Name = Name.Text;
-        signupUserFile.Name = fileName;
-
-        if (File.Exists(fileName))
-        {
-            signupUserFile.LastOnline = File.GetCreationTime(fileName);
-            //signupUserFile = File.ReadAllText(fileName);
-        }
-
-        BindingContext = signupUserFile;
     }
 
     private async void SaveButton_Clicked(object sender, EventArgs e)
     {
+        var apir = new ApisService();
+        string json = JsonConvert.SerializeObject(new WiseUser() {
+            Email= wEmail.Text,
+            Password=wPaassword.Text,
+            Name=wName.Text,
+        });
+
+        StringContent httpContent = new StringContent(json, System.Text.Encoding.UTF8, "application/json");
+        await apir.PostAsync("https://localhost:7086/wiseusercontroller", httpContent);
         await Shell.Current.GoToAsync(nameof(LoginPage));
     }
 

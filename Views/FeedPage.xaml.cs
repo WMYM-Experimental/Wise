@@ -24,9 +24,8 @@ public partial class FeedPage : ContentPage
     private void MatchAction(object sender, EventArgs e)
     {
         var apiservice = new ApisService();
-        var people = apiservice.GetAsync("https://localhost:7086/api/wiseusers").Result.Content;
+        var people = apiservice.GetAsync("https://localhost:7086/api/wiseusercontroller").Result.Content;
         var listpeople = JsonSerializer.Deserialize<List<WiseUser>>(people.ToString());
-
 
         BindingContext = listpeople;
     }

@@ -10,6 +10,7 @@
         <Grid RowDefinitions=".25*,.75*" ColumnDefinitions=".3*,.1*,.6*" Margin="20" VerticalOptions="Start">
             <Image
                 Source="tinder.png"
+                x:Name="img"
                 HeightRequest="225"
                 WidthRequest="225" 
                 Grid.Column="0"/>
@@ -21,12 +22,15 @@
                            FontSize="32"
                            FontAttributes="Bold"
                            TextColor="Black"
+                           x:Name="name"
                            Margin="0"/>
+
 
                     <Label Text="21"
                            FontSize="32"
                            FontAttributes="None"
                            TextColor="Gray"
+                           x:Name="edad"
                            Margin="20,0,0,0"/>
                 </HorizontalStackLayout>
                 <VerticalStackLayout Grid.Row="1">
@@ -110,6 +114,15 @@
                 </CollectionView>
             </VerticalStackLayout>
 
+            <Button
+                Clicked="getdata"
+                Grid.Row="1"
+                Text="Get data"
+                WidthRequest="150"
+                HeightRequest="50"
+                Grid.Column="2"
+                >
+            </Button>
 
 
 
