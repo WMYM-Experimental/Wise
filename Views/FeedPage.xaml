@@ -1,31 +1,182 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Wise.Views.FeedPage"
-            FlexLayout.AlignSelf="Center">
+             FlexLayout.AlignSelf="Center"
+             Title="Matchs">
 
-    <ContentPage
-        Title="Matchs">
+    <VerticalStackLayout>
         <VerticalStackLayout>
-            <Image
-                Source="tinder.png">
-            </Image>
+            <HorizontalStackLayout
+            Spacing="10"
+            Margin="10"
+            Padding="10"
+            BackgroundColor="White">
+
+                <Button
+                    WidthRequest="50" 
+                    HeightRequest="50" 
+                    BackgroundColor="#77D065" 
+                    Text="Profile"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    Margin="10"
+                    Padding="10"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    Clicked="GoToProfile"
+                        />
+
+                <Button
+                    WidthRequest="50" 
+                    HeightRequest="50" 
+                    BackgroundColor="#77D065" 
+                    Text="Chats"
+                    FontSize="20"
+                    FontAttributes="Bold"
+                    Margin="10"
+                    Padding="10"
+                    VerticalOptions="CenterAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    Clicked="GoToChats"/>
+            </HorizontalStackLayout>
+
+            <!-- Match section -->
+            <VerticalStackLayout>
+
+                <!-- Profile Picture section -->
+                <Image
+                    Source="{Binding Source}"
+                    Margin="10"
+                    HeightRequest="300"
+                    WidthRequest="300">
+                </Image>
+
+
+                <!-- General Info section -->
+                <VerticalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label
+                            Text="{Binding Name}"
+                            FontSize="20"
+                            FontAttributes="Bold"
+                            Margin="10"
+                            Padding="10"
+                            VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="CenterAndExpand"
+                            />
+                        <Label
+                            Text="{Binding Age}"
+                            FontSize="20"
+                            FontAttributes="Bold"
+                            Margin="10"
+                            Padding="10"
+                            VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="CenterAndExpand"
+                            />
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout>
+                        <Label
+                            Text="{Binding Location}"
+                            FontSize="20"
+                            FontAttributes="Bold"
+                            Margin="10"
+                            Padding="10"
+                            VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="CenterAndExpand"
+                            />
+                        <Label
+                            Text="{Binding isOnline}"
+                            FontSize="20"
+                            FontAttributes="Bold"
+                            Margin="10"
+                            Padding="10"
+                            VerticalOptions="CenterAndExpand"
+                            HorizontalOptions="CenterAndExpand"
+                            />
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+
+
+                <!-- Bio section -->
+                <VerticalStackLayout>
+                    <Label
+                        Text="{Binding Bio}"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        Margin="10"
+                        Padding="10"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand"
+                        />
+                </VerticalStackLayout>
+
+
+                <!-- Interests section -->
+                <HorizontalStackLayout>
+                    <Label
+                        Text="{Binding I1}"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        Margin="10"
+                        Padding="10"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand"
+                        />
+                    <Label
+                        Text="{Binding I2}"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        Margin="10"
+                        Padding="10"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand"
+                        />
+                    <Label
+                        Text="{Binding I3}"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        Margin="10"
+                        Padding="10"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand"
+                        />
+                </HorizontalStackLayout>
+
+
+                <!-- Interactions section -->
+                <HorizontalStackLayout>
+                    <Button
+                        WidthRequest="50" 
+                        HeightRequest="50"  
+                        BackgroundColor="#77D065" 
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center"
+                        Text="Like"
+                        x:Name="LikeButton"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        Margin="10"
+                        Padding="10"/>
+
+                    <Button
+                        WidthRequest="50" 
+                        HeightRequest="50" 
+                        BackgroundColor="#77D065" 
+                        Text="Dislike"
+                        x:Name="DislikeButton"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        Margin="10"
+                        Padding="10"
+                        VerticalOptions="CenterAndExpand"
+                        HorizontalOptions="CenterAndExpand"
+                        />
+                </HorizontalStackLayout>
+
+            </VerticalStackLayout>
         </VerticalStackLayout>
-    </ContentPage>
+    </VerticalStackLayout>
 
-    <ContentPage
-        Title="Chats">
-        <Label Text="Chats" />
-    </ContentPage>
-
-    <ContentPage
-        Title="Likes">
-        <Label Text="Likes" />
-    </ContentPage>
-
-    <ContentPage
-        Title="Profile">
-        <Label Text="Hello ContentPage 4" />
-    </ContentPage>
-
-</TabbedPage>
+</ContentPage>

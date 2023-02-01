@@ -47,5 +47,10 @@ public partial class AppShell : Shell
             nameof(SignupPage),
             typeof(SignupPage)
             );
+
+        Routing.RegisterRoute(
+            nameof(ProfilePage),
+            typeof(ProfilePage)
+            );
     }
 }

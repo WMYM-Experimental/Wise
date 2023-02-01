@@ -2,11 +2,120 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Wise.Views.ProfilePage"
-             Title="ProfilePage">
-    <VerticalStackLayout>
-        <VerticalStackLayout>
-            <!--Pictures-->
-        </VerticalStackLayout>
-        
-    </VerticalStackLayout>
+             xmlns:models="clr-namespace:Wise.Models"
+             Title="ProfilePage"
+             BackgroundColor="White">
+
+    <ScrollView>
+        <Grid RowDefinitions=".25*,.75*" ColumnDefinitions=".3*,.1*,.6*" Margin="20" VerticalOptions="Start">
+            <Image
+                Source="tinder.png"
+                HeightRequest="225"
+                WidthRequest="225" 
+                Grid.Column="0"/>
+
+            <Grid RowDefinitions=".3*,.7*" Grid.Row="0" Grid.Column="2">
+
+                <HorizontalStackLayout VerticalOptions="Start" HeightRequest="40" Margin="0,25,0,0">
+                    <Label Text="Nombre Usuario"
+                           FontSize="32"
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           Margin="0"/>
+
+                    <Label Text="21"
+                           FontSize="32"
+                           FontAttributes="None"
+                           TextColor="Gray"
+                           Margin="20,0,0,0"/>
+                </HorizontalStackLayout>
+                <VerticalStackLayout Grid.Row="1">
+                    <HorizontalStackLayout VerticalOptions="Center" HeightRequest="35">
+                        <Image
+                            Source="universidad.png"
+                            HeightRequest="24"
+                            WidthRequest="24" />
+                        <Label Text="Universidad"
+                           FontSize="24"
+                           FontAttributes="None"
+                           TextColor="LightGray"
+                           Margin="20,0,0,0"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout VerticalOptions="Center" HeightRequest="35">
+                        <Image
+                            Source="ubicacion.png"
+                            HeightRequest="24"
+                            WidthRequest="24" />
+                        <Label Text="Ciudad"
+                           FontSize="24"
+                           FontAttributes="None"
+                           TextColor="LightGray"
+                           Margin="20,0,0,0"/>
+                    </HorizontalStackLayout>
+
+                    <HorizontalStackLayout VerticalOptions="Center" HeightRequest="35">
+                        <Image
+                            Source="genero.png"
+                            HeightRequest="24"
+                            WidthRequest="24" />
+                        <Label Text="Genero - Orientacion sexual"
+                           FontSize="24"
+                           FontAttributes="None"
+                           TextColor="LightGray"
+                           Margin="20,0,0,0"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+            </Grid>
+
+            <VerticalStackLayout Margin="35,35,0,0" Grid.Row="1">
+
+                <Label Text="Descripcion"
+                    FontSize="28"
+                    FontAttributes="Bold"
+                    TextColor="Black"/>
+
+                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel rutrum ipsum, et dignissim turpis."
+                    FontSize="24"
+                    FontAttributes="Bold"
+                    TextColor="Grey"
+                       Margin="0,20,0,0"/>
+            </VerticalStackLayout>
+
+
+            <BoxView Grid.Column="1"
+                     Grid.Row="1" 
+                     BackgroundColor="LightGray" 
+                     WidthRequest="2" 
+                     HeightRequest="200" 
+                     VerticalOptions="End"
+                     Margin="0,50,0,0"/>
+
+            <VerticalStackLayout Margin="35,35,0,0" Grid.Row="1" Grid.Column="2">
+
+                <CollectionView  Grid.Row="1" x:Name="interestsList" Margin="10">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="models:Interest">
+
+                            <Frame WidthRequest="100" HeightRequest="35" BorderColor="DimGray">
+                                <Label Text= "Titulo" 
+                                       Margin="5" 
+                                       FontSize="28"
+                                       FontFamily="Roboto-Bold"/>
+                            </Frame>
+
+
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </VerticalStackLayout>
+
+
+
+
+        </Grid>
+
+
+
+    </ScrollView>
 </ContentPage>

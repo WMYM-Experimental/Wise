@@ -1,12 +1,123 @@
 <?xml version="1.0" encoding="utf-8" ?>
+
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Wise.Views.ChatsPage"
              Title="ChatsPage">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <Grid RowDefinitions=".2*,.3*,.5*">
+
+        <VerticalStackLayout Margin="20">
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Image
+                Source="tinder.png"
+                HeightRequest="50"
+                WidthRequest="50" />
+
+            </HorizontalStackLayout>
+            <SearchBar Margin="0,15,0,0"/>
+
+            <Grid RowDefinitions=".1*,.9*" Grid.Row="1">
+                <Label Text="Matches" Margin="0,20,0,0"/>
+                <CarouselView Grid.Row="1">
+                    <CarouselView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>match1</x:String>
+                            <x:String>match2</x:String>
+                            <x:String>match3</x:String>
+                            <x:String>match4</x:String>
+                            <x:String>match5</x:String>
+                            <x:String>match6</x:String>
+                            <x:String>match7</x:String>
+                            <x:String>match8</x:String>
+                            <x:String>match9</x:String>
+                        </x:Array>
+                    </CarouselView.ItemsSource>
+                    <CarouselView.ItemsLayout>
+                        <LinearItemsLayout Orientation="Horizontal" 
+                                           ItemSpacing="20"/>
+                    </CarouselView.ItemsLayout>
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout>
+                                <Frame Margin="20"
+                                       BackgroundColor="White"
+                                       BorderColor="DarkGray"
+                                       CornerRadius="5"
+                                       HasShadow="True"
+                                       HeightRequest="100"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="CenterAndExpand">
+                                    <VerticalStackLayout>
+
+                                        <Image
+                                            Source="tinder.png"
+                                            HeightRequest="60"
+                                            WidthRequest="60" />
+                                        <Label Text="{Binding .}"/>
+
+                                    </VerticalStackLayout>
+
+                                </Frame>
+                            </StackLayout>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+            </Grid>
+            <Grid RowDefinitions=".1*,.9*" Grid.Row="1">
+                <Label Text="Chats" Margin="0,20,0,20"/>
+
+                <CollectionView Grid.Row="1">
+                    <CollectionView.ItemsSource>
+                        <x:Array Type="{x:Type x:String}">
+                            <x:String>match1</x:String>
+                            <x:String>match2</x:String>
+                            <x:String>match3</x:String>
+                            <x:String>match4</x:String>
+                            <x:String>match5</x:String>
+                            <x:String>match6</x:String>
+                            <x:String>match7</x:String>
+                            <x:String>match8</x:String>
+                            <x:String>match9</x:String>
+                        </x:Array>
+                    </CollectionView.ItemsSource>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <ScrollView>
+                                <Grid Padding="10">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="Auto" />
+                                    </Grid.ColumnDefinitions>
+                                    <Image Grid.RowSpan="2"
+                                        Source="tinder.png"
+                                        Aspect="AspectFill"
+                                        HeightRequest="60"
+                                        WidthRequest="60" />
+                                    <Label Grid.Column="1"
+                                        Text="Nombre de emparejamiento"
+                                        FontAttributes="Bold" />
+                                    <Label Grid.Row="1"
+                                        Grid.Column="1"
+                                        Text="Ultimo mensaje"
+                                        FontAttributes="Italic"
+                                        VerticalOptions="End" />
+                                </Grid>
+
+                            </ScrollView>
+
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+
+            </Grid>
+
+
+        </VerticalStackLayout>
+
+
+    </Grid>
 </ContentPage>
